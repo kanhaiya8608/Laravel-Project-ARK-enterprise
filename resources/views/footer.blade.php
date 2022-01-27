@@ -45,7 +45,7 @@
               <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100035443067909"><i class="bi bi-facebook"></i></a></li>
               <li><a class="twitter" href="https://www.instagram.com/kanhaiya7835/"><i class="bi bi-instagram"></i></a></li>
               <li><a class="dribbble" href="https://github.com/kanhaiya8608"><i class="bi bi-github"></i></a></li>
-              <li><a class="linkedin" href=""><i class="bi bi-linkedin"></i></a></li>   
+              <li><a class="linkedin" href="https://www.linkedin.com/in/kanhaiya-verma-16081998/"><i class="bi bi-linkedin"></i></a></li>   
             </ul>
           </div>
         </div>
