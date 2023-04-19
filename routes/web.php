@@ -31,6 +31,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
     })->name('dashboard');
 
-if (App::environment('production')) {
-    URL::forceScheme('https');
-    }
+
+URL::forceScheme('https');
