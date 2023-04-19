@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,17 +16,21 @@ use App\Http\Controllers\MailController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+    });
 Route::get('propertym', function () {
     return view('propertym');
-});
+    });
 Route::get('lettings', function () {
     return view('lettings');
-});
+    });
 
 Route::get('/email', [App\Http\Controllers\EmailController::class, 'create']);
 Route::post('/email', [App\Http\Controllers\EmailController::class, 'sendEmail'])->name('send.email');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
-})->name('dashboard');
+    })->name('dashboard');
+
+if (App::environment('production')) {
+    URL::forceScheme('https');
+    }
