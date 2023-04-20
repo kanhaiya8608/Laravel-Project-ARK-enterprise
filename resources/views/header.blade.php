@@ -582,10 +582,10 @@ header{
       
     </ol>
     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-     <img src="img/left-arrow.svg" alt="Prev"> 
+     <img src="/left-arrow.svg" alt="Prev"> 
   </a>
   <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-    <img src="img/right-arrow.svg" alt="Next">
+    <img src="/right-arrow.svg" alt="Next">
   </a>
   </div>
   <div class="carousel-inner">
