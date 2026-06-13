@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 #[Fillable(['name', 'description'])]
 
-
 class Article extends Model
 {
     //

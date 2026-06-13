@@ -1,8 +1,6 @@
 import { Head, Link, Form, router } from '@inertiajs/react';
-import articles from '@/routes/articles';
-import { Button } from '@/components/ui/button';
 import { Pencil, Save, Search, Trash } from 'lucide-react';
-import type { Article } from '@/types/article';
+import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
 import {
@@ -13,6 +11,8 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
+import articles from '@/routes/articles';
+import type { Article } from '@/types/article';
 
 type PaginationLink = {
     url: string | null;
@@ -35,10 +35,13 @@ type Props = {
 
 export default function ArticleIndex({ collection, search }: Props) {
     const onDelete = (item: Article) => {
-    if (confirm(`Are you sure you want to delete the article?`)) {{
+    if (confirm(`Are you sure you want to delete the article?`)) {
+{
         router.delete(articles.destroy(item));
-    }}
+    }
+}
     };
+
     return (
         <>
             <Head title="Articles" />

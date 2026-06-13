@@ -2,18 +2,22 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
+/**
+ * @mixin Article
+ */
 class ArticleResource extends JsonResource
 {
+    public static $wrap = null;
+
     /**
      * Transform the resource into an array.
      *
      * @return array<string, mixed>
      */
-
-    public static $wrap = null;
     public function toArray(Request $request): array
     {
         return [
